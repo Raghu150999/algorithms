@@ -1,0 +1,8 @@
+datasets
+output
+test
+*.out
+*.html
+*.csv
+*.gephi
+.vscode
