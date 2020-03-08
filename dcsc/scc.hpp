@@ -2,28 +2,43 @@
 
 using namespace std;
 
-class Graph
+class DCSC
 {
-    /// n: Number of vertices, m: Number of edges
-    int n, m;
+    /// n: Number of vertices
+    int n;
+    
+    /// m: Number of edges
+    int m;
 
-    /// graph: G, grapht: Gt (transpose graph)
-    vector<int> *graph, *grapht;
+    /// graph: G
+    vector<int> *graph;
+
+    /// grapht: Gt (transpose graph)
+    vector<int> *grapht;
     
     /// Component Number to seperate induced graphs
     vector<int> cno;
 
-    /// Visited array for the two dfs calls
-    vector<bool> vis, vist;
+    /// Visited array for G
+    vector<bool> vis;
+
+    /// Visited array for Gt
+    vector<bool> vist;
     
-    /// Perform DFS on G to compute start and finish times
+    /**
+     * @brief Perform DFS on G to find sucessors
+     * 
+     * @param u current node
+     * @param currcno id number of the induced graph u belongs
+     * @param vis visited array
+     */
     void dfsG(int u, int currcno, vector<bool> &vis);
 
     /**
-     * @brief Computes component by performing DFS on Gt
+     * @brief Perform DFS to find predecessors
      * 
      * @param u current node 
-     * @param currcno component number of the induced graph it belongs
+     * @param currcno id number of the induced graph u belongs
      * @param vis visited array
      */
     void dfsGt(int u, int currcno, vector<bool> &vis);
@@ -39,12 +54,26 @@ class Graph
 
 public:
 
-    /// Constructor for initialising data structures
-    Graph(int n, int m);
+    /**
+     * @brief Construct a new Graph object
+     * 
+     * @param n number of nodes
+     * @param m number of edges
+     */
+    DCSC(int n, int m);
 
-    /// Add a directed edge from u ~> v
+    /**
+     * @brief insert a new directed edges u -> v
+     * 
+     * @param u 
+     * @param v 
+     */
     void addEdge(int u, int v);
 
-    /// Compute all strongly connected components
+    /**
+     * @brief Computes strongly connected components of G
+     * 
+     * @return vector<vector<int>> 
+     */
     vector<vector<int>> computeSCCs(void);
 };

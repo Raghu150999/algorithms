@@ -1,0 +1,70 @@
+\hypertarget{classGraph}{}\section{Graph Class Reference}
+\label{classGraph}\index{Graph@{Graph}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGraph_a6373445ba46075e2a486cce2335b37e7}{Graph}} (int n, int m)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGraph}{Graph}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGraph_ad8c10df34357b2cd865c81e0c4f0bd8c}{add\+Edge}} (int u, int v)
+\begin{DoxyCompactList}\small\item\em insert a new directed edges u -\/$>$ v \end{DoxyCompactList}\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classGraph_a35fd495e6f86b5323d15e2ed1cc4b692}{compute\+S\+C\+Cs}} (void)
+\begin{DoxyCompactList}\small\item\em Computes strongly connected components of G. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGraph_a6373445ba46075e2a486cce2335b37e7}\label{classGraph_a6373445ba46075e2a486cce2335b37e7}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{Graph()}{Graph()}}
+{\footnotesize\ttfamily Graph\+::\+Graph (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{m }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classGraph}{Graph}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & number of nodes \\
+\hline
+{\em m} & number of edges \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGraph_ad8c10df34357b2cd865c81e0c4f0bd8c}\label{classGraph_ad8c10df34357b2cd865c81e0c4f0bd8c}} 
+\index{Graph@{Graph}!add\+Edge@{add\+Edge}}
+\index{add\+Edge@{add\+Edge}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{add\+Edge()}{addEdge()}}
+{\footnotesize\ttfamily void Graph\+::add\+Edge (\begin{DoxyParamCaption}\item[{int}]{u,  }\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+insert a new directed edges u -\/$>$ v 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & \\
+\hline
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraph_a35fd495e6f86b5323d15e2ed1cc4b692}\label{classGraph_a35fd495e6f86b5323d15e2ed1cc4b692}} 
+\index{Graph@{Graph}!compute\+S\+C\+Cs@{compute\+S\+C\+Cs}}
+\index{compute\+S\+C\+Cs@{compute\+S\+C\+Cs}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{compute\+S\+C\+Cs()}{computeSCCs()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ int $>$ $>$ Graph\+::compute\+S\+C\+Cs (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Computes strongly connected components of G. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$vector$<$int$>$$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dcsc/scc.\+hpp\item 
+dcsc/scc.\+cpp\end{DoxyCompactItemize}

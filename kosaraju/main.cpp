@@ -20,8 +20,8 @@ int getval(string u)
 
 int main()
 {
-    // Allocate larger stack size
-    const rlim_t kStackSize = 160 * 1024 * 1024;   // min stack size = 16 MB
+    /// Allocate larger stack size (default is 8MB)
+    const rlim_t kStackSize = 160 * 1024 * 1024;   
     struct rlimit rl;
     int result;
 
@@ -41,7 +41,7 @@ int main()
     }
     int n, m;
     cin >> n >> m;
-    Graph g(n, m);
+    Kosaraju g(n, m);
     for(int i = 1; i <= m; i++)
     {
         string u, v;
@@ -49,7 +49,7 @@ int main()
         g.addEdge(getval(u), getval(v));
     }
     
-    // Sorting output for fixed format output
+    /// Sorting output for fixed format output
     vector<vector<int>> comps = g.computeSCCs();
     for(auto &comp: comps)
         sort(comp.begin(), comp.end());

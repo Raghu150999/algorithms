@@ -1,0 +1,160 @@
+\hypertarget{classDCSC}{}\section{D\+C\+SC Class Reference}
+\label{classDCSC}\index{D\+C\+SC@{D\+C\+SC}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDCSC_a9d23a63eca7b3007daa3e1c6f6a61f2c}{D\+C\+SC}} (int \mbox{\hyperlink{classDCSC_a8fb298259f65294a77e45bb5b4895171}{n}}, int \mbox{\hyperlink{classDCSC_a847c678bc6a65c21fc2ade8fc78b2859}{m}})
+\begin{DoxyCompactList}\small\item\em Construct a new Graph object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDCSC_ac971c9c7f4b35eebaab12f9dc399e260}{add\+Edge}} (int u, int v)
+\begin{DoxyCompactList}\small\item\em insert a new directed edges u -\/$>$ v \end{DoxyCompactList}\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classDCSC_a287ebcdb5c7588d274e0b9574af0451e}{compute\+S\+C\+Cs}} (void)
+\begin{DoxyCompactList}\small\item\em Computes strongly connected components of G. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classDCSC_a262b1be4dc9bf0da1b9d2d938b7f9c1b}{dfsG}} (int u, int currcno, vector$<$ bool $>$ \&\mbox{\hyperlink{classDCSC_a5bdcee3f90e24a2742b10be94dc42502}{vis}})
+\begin{DoxyCompactList}\small\item\em Perform D\+FS on G to find sucessors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDCSC_aa58c4ad1ac9efb2b7b5b97ef8c0e25ac}{dfs\+Gt}} (int u, int currcno, vector$<$ bool $>$ \&\mbox{\hyperlink{classDCSC_a5bdcee3f90e24a2742b10be94dc42502}{vis}})
+\begin{DoxyCompactList}\small\item\em Perform D\+FS to find predecessors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDCSC_af9ebb39c172ff579794d33bc1d8f67d2}{dcsc}} (int currcno, vector$<$ int $>$ \&nodes, vector$<$ vector$<$ int $>$$>$ \&comps)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classDCSC}{D\+C\+SC}} Algorithm to compute strong components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDCSC_a8fb298259f65294a77e45bb5b4895171}\label{classDCSC_a8fb298259f65294a77e45bb5b4895171}} 
+int \mbox{\hyperlink{classDCSC_a8fb298259f65294a77e45bb5b4895171}{n}}
+\begin{DoxyCompactList}\small\item\em n\+: Number of vertices \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDCSC_a847c678bc6a65c21fc2ade8fc78b2859}\label{classDCSC_a847c678bc6a65c21fc2ade8fc78b2859}} 
+int \mbox{\hyperlink{classDCSC_a847c678bc6a65c21fc2ade8fc78b2859}{m}}
+\begin{DoxyCompactList}\small\item\em m\+: Number of edges \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDCSC_a8bb8f17a884719c25b0617f2462af75a}\label{classDCSC_a8bb8f17a884719c25b0617f2462af75a}} 
+vector$<$ int $>$ $\ast$ \mbox{\hyperlink{classDCSC_a8bb8f17a884719c25b0617f2462af75a}{graph}}
+\begin{DoxyCompactList}\small\item\em graph\+: G \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDCSC_af2907219f01660e8435e02c57b30f049}\label{classDCSC_af2907219f01660e8435e02c57b30f049}} 
+vector$<$ int $>$ $\ast$ \mbox{\hyperlink{classDCSC_af2907219f01660e8435e02c57b30f049}{grapht}}
+\begin{DoxyCompactList}\small\item\em grapht\+: Gt (transpose graph) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDCSC_a34d37c084c51943e2841b7ab70a1e009}\label{classDCSC_a34d37c084c51943e2841b7ab70a1e009}} 
+vector$<$ int $>$ \mbox{\hyperlink{classDCSC_a34d37c084c51943e2841b7ab70a1e009}{cno}}
+\begin{DoxyCompactList}\small\item\em Component Number to seperate induced graphs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDCSC_a5bdcee3f90e24a2742b10be94dc42502}\label{classDCSC_a5bdcee3f90e24a2742b10be94dc42502}} 
+vector$<$ bool $>$ \mbox{\hyperlink{classDCSC_a5bdcee3f90e24a2742b10be94dc42502}{vis}}
+\begin{DoxyCompactList}\small\item\em Visited array for G. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDCSC_a95855fd264265a73a7bbe51452558dd0}\label{classDCSC_a95855fd264265a73a7bbe51452558dd0}} 
+vector$<$ bool $>$ \mbox{\hyperlink{classDCSC_a95855fd264265a73a7bbe51452558dd0}{vist}}
+\begin{DoxyCompactList}\small\item\em Visited array for Gt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDCSC_a9d23a63eca7b3007daa3e1c6f6a61f2c}\label{classDCSC_a9d23a63eca7b3007daa3e1c6f6a61f2c}} 
+\index{D\+C\+SC@{D\+C\+SC}!D\+C\+SC@{D\+C\+SC}}
+\index{D\+C\+SC@{D\+C\+SC}!D\+C\+SC@{D\+C\+SC}}
+\subsubsection{\texorpdfstring{D\+C\+S\+C()}{DCSC()}}
+{\footnotesize\ttfamily D\+C\+S\+C\+::\+D\+C\+SC (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{m }\end{DoxyParamCaption})}
+
+
+
+Construct a new Graph object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & number of nodes \\
+\hline
+{\em m} & number of edges \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDCSC_ac971c9c7f4b35eebaab12f9dc399e260}\label{classDCSC_ac971c9c7f4b35eebaab12f9dc399e260}} 
+\index{D\+C\+SC@{D\+C\+SC}!add\+Edge@{add\+Edge}}
+\index{add\+Edge@{add\+Edge}!D\+C\+SC@{D\+C\+SC}}
+\subsubsection{\texorpdfstring{add\+Edge()}{addEdge()}}
+{\footnotesize\ttfamily void D\+C\+S\+C\+::add\+Edge (\begin{DoxyParamCaption}\item[{int}]{u,  }\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+insert a new directed edges u -\/$>$ v 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & \\
+\hline
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDCSC_a287ebcdb5c7588d274e0b9574af0451e}\label{classDCSC_a287ebcdb5c7588d274e0b9574af0451e}} 
+\index{D\+C\+SC@{D\+C\+SC}!compute\+S\+C\+Cs@{compute\+S\+C\+Cs}}
+\index{compute\+S\+C\+Cs@{compute\+S\+C\+Cs}!D\+C\+SC@{D\+C\+SC}}
+\subsubsection{\texorpdfstring{compute\+S\+C\+Cs()}{computeSCCs()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ int $>$ $>$ D\+C\+S\+C\+::compute\+S\+C\+Cs (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Computes strongly connected components of G. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$vector$<$int$>$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDCSC_af9ebb39c172ff579794d33bc1d8f67d2}\label{classDCSC_af9ebb39c172ff579794d33bc1d8f67d2}} 
+\index{D\+C\+SC@{D\+C\+SC}!dcsc@{dcsc}}
+\index{dcsc@{dcsc}!D\+C\+SC@{D\+C\+SC}}
+\subsubsection{\texorpdfstring{dcsc()}{dcsc()}}
+{\footnotesize\ttfamily void D\+C\+S\+C\+::dcsc (\begin{DoxyParamCaption}\item[{int}]{currcno,  }\item[{vector$<$ int $>$ \&}]{nodes,  }\item[{vector$<$ vector$<$ int $>$$>$ \&}]{comps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{classDCSC}{D\+C\+SC}} Algorithm to compute strong components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em currcno} & defines current component number of the induced graph \\
+\hline
+{\em nodes} & vector of nodes of the induced graph \\
+\hline
+{\em comps} & all strong components \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDCSC_a262b1be4dc9bf0da1b9d2d938b7f9c1b}\label{classDCSC_a262b1be4dc9bf0da1b9d2d938b7f9c1b}} 
+\index{D\+C\+SC@{D\+C\+SC}!dfsG@{dfsG}}
+\index{dfsG@{dfsG}!D\+C\+SC@{D\+C\+SC}}
+\subsubsection{\texorpdfstring{dfs\+G()}{dfsG()}}
+{\footnotesize\ttfamily void D\+C\+S\+C\+::dfsG (\begin{DoxyParamCaption}\item[{int}]{u,  }\item[{int}]{currcno,  }\item[{vector$<$ bool $>$ \&}]{vis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Perform D\+FS on G to find sucessors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & current node \\
+\hline
+{\em currcno} & id number of the induced graph u belongs \\
+\hline
+{\em vis} & visited array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDCSC_aa58c4ad1ac9efb2b7b5b97ef8c0e25ac}\label{classDCSC_aa58c4ad1ac9efb2b7b5b97ef8c0e25ac}} 
+\index{D\+C\+SC@{D\+C\+SC}!dfs\+Gt@{dfs\+Gt}}
+\index{dfs\+Gt@{dfs\+Gt}!D\+C\+SC@{D\+C\+SC}}
+\subsubsection{\texorpdfstring{dfs\+Gt()}{dfsGt()}}
+{\footnotesize\ttfamily void D\+C\+S\+C\+::dfs\+Gt (\begin{DoxyParamCaption}\item[{int}]{u,  }\item[{int}]{currcno,  }\item[{vector$<$ bool $>$ \&}]{vis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Perform D\+FS to find predecessors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & current node \\
+\hline
+{\em currcno} & id number of the induced graph u belongs \\
+\hline
+{\em vis} & visited array \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dcsc/scc.\+hpp\item 
+dcsc/scc.\+cpp\end{DoxyCompactItemize}

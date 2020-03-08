@@ -1,0 +1,133 @@
+\hypertarget{classKosaraju}{}\section{Kosaraju Class Reference}
+\label{classKosaraju}\index{Kosaraju@{Kosaraju}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classKosaraju_a0ef4ff4f55746c3a1a73a1209edfa148}{Kosaraju}} (int \mbox{\hyperlink{classKosaraju_a43acb7cefc69ce4e11c93ececce01ecb}{n}}, int \mbox{\hyperlink{classKosaraju_a7fdb8e3b71f5c02717859fdaa6a4be7a}{m}})
+\begin{DoxyCompactList}\small\item\em Construct a new Graph object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKosaraju_a5823c2fbedc3a02653c78277138b9d55}{add\+Edge}} (int u, int v)
+\begin{DoxyCompactList}\small\item\em Add directed edge from u -\/$>$ v. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classKosaraju_ae283595a4b00f90229ebb6a2f8a66f61}{compute\+S\+C\+Cs}} (void)
+\begin{DoxyCompactList}\small\item\em Computes all strongly connected components of G. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classKosaraju_a0001d8a4780d0b7fced804ed3b1fc972}{dfsG}} (int u)
+\begin{DoxyCompactList}\small\item\em Performs D\+FS to compute start and finish times. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKosaraju_a7168221343761e5db6cac1dfe04882bb}{dfs\+Gt}} (int u, vector$<$ int $>$ \&comp)
+\begin{DoxyCompactList}\small\item\em Computes strongly connected component by D\+FS on transpose graph Gt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classKosaraju_a43acb7cefc69ce4e11c93ececce01ecb}\label{classKosaraju_a43acb7cefc69ce4e11c93ececce01ecb}} 
+int \mbox{\hyperlink{classKosaraju_a43acb7cefc69ce4e11c93ececce01ecb}{n}}
+\begin{DoxyCompactList}\small\item\em n\+: Number of vertices \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKosaraju_a7fdb8e3b71f5c02717859fdaa6a4be7a}\label{classKosaraju_a7fdb8e3b71f5c02717859fdaa6a4be7a}} 
+int \mbox{\hyperlink{classKosaraju_a7fdb8e3b71f5c02717859fdaa6a4be7a}{m}}
+\begin{DoxyCompactList}\small\item\em m\+: Number of edges \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKosaraju_a965600a40739d74824733fa521457710}\label{classKosaraju_a965600a40739d74824733fa521457710}} 
+vector$<$ int $>$ $\ast$ \mbox{\hyperlink{classKosaraju_a965600a40739d74824733fa521457710}{graph}}
+\begin{DoxyCompactList}\small\item\em graph\+: G \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKosaraju_a26ec179ff24cf2eb7d89500b868739cf}\label{classKosaraju_a26ec179ff24cf2eb7d89500b868739cf}} 
+vector$<$ int $>$ $\ast$ \mbox{\hyperlink{classKosaraju_a26ec179ff24cf2eb7d89500b868739cf}{grapht}}
+\begin{DoxyCompactList}\small\item\em grapht\+: Gt (transpose graph) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKosaraju_a95456794962fa05f38eeffedd1750f24}\label{classKosaraju_a95456794962fa05f38eeffedd1750f24}} 
+vector$<$ int $>$ \mbox{\hyperlink{classKosaraju_a95456794962fa05f38eeffedd1750f24}{ft}}
+\begin{DoxyCompactList}\small\item\em ft\+: finish times \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKosaraju_a9a6421e6566b0f8f8a029708515eb7de}\label{classKosaraju_a9a6421e6566b0f8f8a029708515eb7de}} 
+vector$<$ int $>$ \mbox{\hyperlink{classKosaraju_a9a6421e6566b0f8f8a029708515eb7de}{st}}
+\begin{DoxyCompactList}\small\item\em st\+: start times \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKosaraju_a9ac1cae2856629fe4ccd4586b2fea916}\label{classKosaraju_a9ac1cae2856629fe4ccd4586b2fea916}} 
+vector$<$ bool $>$ \mbox{\hyperlink{classKosaraju_a9ac1cae2856629fe4ccd4586b2fea916}{vis}}
+\begin{DoxyCompactList}\small\item\em Visited array for dfs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKosaraju_a0ef4ff4f55746c3a1a73a1209edfa148}\label{classKosaraju_a0ef4ff4f55746c3a1a73a1209edfa148}} 
+\index{Kosaraju@{Kosaraju}!Kosaraju@{Kosaraju}}
+\index{Kosaraju@{Kosaraju}!Kosaraju@{Kosaraju}}
+\subsubsection{\texorpdfstring{Kosaraju()}{Kosaraju()}}
+{\footnotesize\ttfamily Kosaraju\+::\+Kosaraju (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{m }\end{DoxyParamCaption})}
+
+
+
+Construct a new Graph object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & number of nodes \\
+\hline
+{\em m} & number of edges \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classKosaraju_a5823c2fbedc3a02653c78277138b9d55}\label{classKosaraju_a5823c2fbedc3a02653c78277138b9d55}} 
+\index{Kosaraju@{Kosaraju}!add\+Edge@{add\+Edge}}
+\index{add\+Edge@{add\+Edge}!Kosaraju@{Kosaraju}}
+\subsubsection{\texorpdfstring{add\+Edge()}{addEdge()}}
+{\footnotesize\ttfamily void Kosaraju\+::add\+Edge (\begin{DoxyParamCaption}\item[{int}]{u,  }\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+Add directed edge from u -\/$>$ v. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & \\
+\hline
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKosaraju_ae283595a4b00f90229ebb6a2f8a66f61}\label{classKosaraju_ae283595a4b00f90229ebb6a2f8a66f61}} 
+\index{Kosaraju@{Kosaraju}!compute\+S\+C\+Cs@{compute\+S\+C\+Cs}}
+\index{compute\+S\+C\+Cs@{compute\+S\+C\+Cs}!Kosaraju@{Kosaraju}}
+\subsubsection{\texorpdfstring{compute\+S\+C\+Cs()}{computeSCCs()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ int $>$ $>$ Kosaraju\+::compute\+S\+C\+Cs (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Computes all strongly connected components of G. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$vector$<$int$>$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKosaraju_a0001d8a4780d0b7fced804ed3b1fc972}\label{classKosaraju_a0001d8a4780d0b7fced804ed3b1fc972}} 
+\index{Kosaraju@{Kosaraju}!dfsG@{dfsG}}
+\index{dfsG@{dfsG}!Kosaraju@{Kosaraju}}
+\subsubsection{\texorpdfstring{dfs\+G()}{dfsG()}}
+{\footnotesize\ttfamily void Kosaraju\+::dfsG (\begin{DoxyParamCaption}\item[{int}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Performs D\+FS to compute start and finish times. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKosaraju_a7168221343761e5db6cac1dfe04882bb}\label{classKosaraju_a7168221343761e5db6cac1dfe04882bb}} 
+\index{Kosaraju@{Kosaraju}!dfs\+Gt@{dfs\+Gt}}
+\index{dfs\+Gt@{dfs\+Gt}!Kosaraju@{Kosaraju}}
+\subsubsection{\texorpdfstring{dfs\+Gt()}{dfsGt()}}
+{\footnotesize\ttfamily void Kosaraju\+::dfs\+Gt (\begin{DoxyParamCaption}\item[{int}]{u,  }\item[{vector$<$ int $>$ \&}]{comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Computes strongly connected component by D\+FS on transpose graph Gt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & current node \\
+\hline
+{\em comp} & list of nodes in the strongly connect component \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+kosaraju/scc.\+hpp\item 
+kosaraju/scc.\+cpp\end{DoxyCompactItemize}

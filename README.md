@@ -19,6 +19,15 @@ Dataset       |   Time(s)   |   Number of vertices  |   Number of edges
 google plus   |   228       |   107614              |   30494866
 twitter       |   18        |   81306               |   2420766
 slashdot      |   9         |   82168               |   948464
+pokec         |   4068      |   1632803             |   30622564
+
+## SCC Visualisation
+
+<figure>
+    <img src="scc.png?raw=true" alt="scc" width=50% />
+    <figcaption><em>*yellow nodes represent strongly connected components</em></figcaption>
+</figure>
+
 
 ## Issues 
 - Both algorithms were not running for large graphs even in the server system
