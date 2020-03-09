@@ -21,16 +21,14 @@ twitter       |   18        |   81306               |   2420766
 slashdot      |   9         |   82168               |   948464
 pokec         |   4068      |   1632803             |   30622564
 
-## SCC Visualisation
-
-<figure>
-    <img src="scc.png?raw=true" alt="scc" width=50% />
-    <figcaption><em>*yellow nodes represent strongly connected components</em></figcaption>
-</figure>
-
-
 ## Issues 
 - Both algorithms were not running for large graphs even in the server system
 Fix:
 The fix was to increase stack space allocated to the C++ program.
 By default the OS allocates around 8MB space. However, for very large graphs the stack space used is high because of the dfs call
+
+## SCC Visualisation
+![Figure-1](./plots/scc.png?raw=true)
+
+![Figure-2](./plots/wiki-Vote.png?raw=true)
+

@@ -6,4 +6,5 @@ test
 *.csv
 *.gephi
 .vscode
+Viz
 doxyconfig
