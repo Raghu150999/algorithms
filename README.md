@@ -3,7 +3,7 @@ Two different implementations of Strongly Connected Components (SCC)
 
 ## Kosaraju
 
-### Results for 3 datasets
+### Results for 4 datasets
 Dataset       |   Time(s)   |   Number of vertices  |   Number of edges
 --------------|-------------|-----------------------|-----------------------
 google plus   |   160       |   107614              |   30494866
@@ -13,7 +13,7 @@ pokec         |   163       |   1632803             |   30622564
 
 ## Divide and Conquer Strong Components (DCSC)
 
-### Resutls for 3 datasets
+### Resutls for 4 datasets
 Dataset       |   Time(s)   |   Number of vertices  |   Number of edges
 --------------|-------------|-----------------------|-----------------------
 google plus   |   228       |   107614              |   30494866
