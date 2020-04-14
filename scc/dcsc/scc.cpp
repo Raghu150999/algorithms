@@ -22,7 +22,7 @@ void DCSC::addEdge(int u, int v)
 void DCSC::dfsG(int u, int currcno, vector<bool> &vis)
 {
     vis[u] = true;
-    // For all children which are part of the induced graph and not already visited perfrom DFS recursively
+    // For all children which are part of the induced graph and not already visited perform DFS recursively
     for(int &v: graph[u])
     {
         if(cno[v] != currcno || vis[v])
@@ -34,7 +34,7 @@ void DCSC::dfsG(int u, int currcno, vector<bool> &vis)
 void DCSC::dfsGt(int u, int currcno, vector<bool> &vis)
 {
     vis[u] = true;
-    // For all children which are part of the induced graph and not already visited perfrom DFS recursively
+    // For all children which are part of the induced graph and not already visited perform DFS recursively
     for(int &v: grapht[u])
     {
         if(cno[v] != currcno || vis[v])
