@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #include <sys/resource.h>
-#include "scc.hpp"
+#include "dcsc/scc.hpp"
 
 #define endl "\n"
 

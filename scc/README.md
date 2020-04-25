@@ -1,6 +1,19 @@
 # Strongly Connected Components
 Two different implementations of Strongly Connected Components (SCC)
 
+## Usage
+### Kosaraju
+``` bash
+make kosaraju
+./main_kosaraju < test/input/1.txt
+```
+
+### DCSC
+``` bash
+make dcsc
+./main_dcsc < test/input/1.txt
+```
+
 ## Kosaraju
 
 ### Results for 4 datasets

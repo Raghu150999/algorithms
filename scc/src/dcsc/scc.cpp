@@ -1,4 +1,4 @@
-#include "scc.hpp"
+#include "dcsc/scc.hpp"
 
 DCSC::DCSC(int n, int m)
 {

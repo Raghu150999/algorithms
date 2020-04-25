@@ -1,4 +1,4 @@
-#include "scc.hpp"
+#include "kosaraju/scc.hpp"
 
 Kosaraju::Kosaraju(int n, int m)
 {
