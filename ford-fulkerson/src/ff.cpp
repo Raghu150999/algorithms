@@ -16,12 +16,14 @@ FordFulkerson::FordFulkerson(int n, int s, int t)
 
 bool FordFulkerson::addEdge(int u, int v, int c)
 {
-    if(capacity[v][u] > 0)
-        return false;
-    capacity[u][v] = c;
-    rgraph[u][v] = c;
-    graph[u].push_back(v);
-    graph[v].push_back(u);
+    // handle multi-edge graphs
+    if(capacity[u][v] <= 0)
+    {
+        graph[u].push_back(v);
+        graph[v].push_back(u);
+    }
+    capacity[u][v] += c;
+    rgraph[u][v] += c;
     return true;
 }
 

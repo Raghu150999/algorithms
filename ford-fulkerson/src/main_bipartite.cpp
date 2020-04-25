@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int n, m, s, t;
+    int n, m;
     cin >> n >> m;
     Bipartite bp(n);
     for(int i = 1; i <= m; i++)

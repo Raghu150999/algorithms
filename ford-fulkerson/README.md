@@ -1,5 +1,5 @@
 # Ford Fulkerson
-Implementation of classic ford fulkerson algorithm and using it on few applications.
+Implementation of classic ford fulkerson algorithm and using it for few applications.
 
 ## Applications
 1. Find max flow in a network flow (supply chain for example)
@@ -10,13 +10,13 @@ Implementation of classic ford fulkerson algorithm and using it on few applicati
 1. Run ford-fulkerson:
 
 ``` bash
-g++ main.cpp ff.cpp
-./a.out < tests/test.txt
+make main
+./main < tests/in_test1.txt
 ```
 
 2. Run bipartite matching:
 
 ``` bash
-g++ main_bipartite.cpp ff.cpp bipartite.cpp
-./a.out < tests/test_bp.txt
+make main_bipartite
+./main_bipartite < tests/test_bp.txt
 ```
