@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ft',['ft',['../classKosaraju.html#a95456794962fa05f38eeffedd1750f24',1,'Kosaraju']]]
+  ['kosaraju',['Kosaraju',['../classKosaraju.html',1,'Kosaraju'],['../classKosaraju.html#a0ef4ff4f55746c3a1a73a1209edfa148',1,'Kosaraju::Kosaraju()']]]
 ];

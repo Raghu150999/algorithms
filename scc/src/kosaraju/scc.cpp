@@ -36,7 +36,7 @@ void Kosaraju::dfsGt(int u, vector<int> &comp)
 
 vector<vector<int>> Kosaraju::computeSCCs(void)
 {
-    // compute finish times (graph could be disconnected)
+    // compute finish time order (graph could be disconnected)
     for(int i = 1; i <= n; i++)
         if(!vis[i])
             dfsG(i);

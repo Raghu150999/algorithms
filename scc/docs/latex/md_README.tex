@@ -1,8 +1,24 @@
 Two different implementations of Strongly Connected Components (S\+CC)
 
+\subsection*{Usage}
+
+\#\#\# \mbox{\hyperlink{classKosaraju}{Kosaraju}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ make kosaraju}
+\DoxyCodeLine{\$ ./main\_kosaraju < test/input/1.txt}
+\end{DoxyCode}
+
+
+\#\#\# \mbox{\hyperlink{classDCSC}{D\+C\+SC}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ make dcsc}
+\DoxyCodeLine{\$ ./main\_dcsc < test/input/1.txt}
+\end{DoxyCode}
+
+
 \subsection*{\mbox{\hyperlink{classKosaraju}{Kosaraju}}}
 
-\subsubsection*{Results for 3 datasets}
+\subsubsection*{Results for 4 datasets}
 
 \tabulinesep=1mm
 \begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
@@ -23,7 +39,7 @@ pokec  &163  &1632803  &30622564   \\\cline{1-4}
 
 \subsection*{Divide and Conquer Strong Components (\mbox{\hyperlink{classDCSC}{D\+C\+SC}})}
 
-\subsubsection*{Resutls for 3 datasets}
+\subsubsection*{Resutls for 4 datasets}
 
 \tabulinesep=1mm
 \begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
