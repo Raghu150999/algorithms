@@ -16,14 +16,11 @@ class Kosaraju
     /// grapht: Gt (transpose graph)
     vector<int> *grapht;
     
-    /// ft: finish times
-    vector<int> ft;
-
-    /// st: start times
-    vector<int> st;
-
     /// Visited array for dfs
     vector<bool> vis;
+
+    /// Stack for reverse order finish times
+    stack<int> st;
 
     /**
      * @brief Performs DFS to compute start and finish times

@@ -10,13 +10,13 @@ Implementation of classic ford fulkerson algorithm and using it for few applicat
 1. Run ford-fulkerson:
 
 ``` bash
-make main
-./main < tests/in_test1.txt
+$ make main
+$ ./main < tests/in_test1.txt
 ```
 
 2. Run bipartite matching:
 
 ``` bash
-make main_bipartite
-./main_bipartite < tests/test_bp.txt
+$ make main_bipartite
+$ ./main_bipartite < tests/test_bp.txt
 ```
