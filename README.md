@@ -1,2 +1,6 @@
 # Design And Analysis of Algorithms
-Assignment implementations of Design and Analysis of Algorithms course
+Design and Analysis of Algorithms course assignments
+
+
+1. Strongly Connected Components (SCC)
+2. Ford Fulkerson Algorithm and its applications
